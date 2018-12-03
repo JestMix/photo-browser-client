@@ -1,0 +1,90 @@
+/* ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    float: left;
+    position: absolute;
+}
+
+li a {
+    display: block;
+    width: 100px;
+}
+
+*/
+
+nav {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: beige;
+}
+
+ul {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+   }
+  ul li {
+    float: left;
+    position: relative;
+  }
+  li a {
+    display: block;
+    width: 100px;
+    color: black;
+    text-align: center;
+    background-color: lightgray;
+    padding: 0.2em 0.6em;
+    text-decoration: none;
+    border: 1px solid lightgray;
+    border-bottom: 1px solid darkgray;
+    border-right: 1px solid darkgray;
+  }
+  li a:hover {
+    background-color: silver;
+    border: 1px solid darkgray;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+  }
+  ul li ul {
+    display: none;
+    position: absolute; /* Damit der folgenden Inhalt nicht nach unten rückt */
+  }
+  ul li:hover ul { display: block; }
+
+  /* alternate sub menu colors) */
+  ul li:hover ul li:nth-child(even) a {
+    display: block;
+    width: 100px;
+    color: black;
+    text-align: center;
+    background-color: yellow;
+    padding: 0.2em 0.6em;
+    text-decoration: none;
+    border: 1px solid lightgray;
+    border-bottom: 1px solid darkgray;
+    border-right: 1px solid darkgray;
+  }
+
+  ul li:hover ul li:nth-child(odd) a {
+    display: block;
+    width: 100px;
+    color: black;
+    text-align: center;
+    background-color: orange;
+    padding: 0.2em 0.6em;
+    text-decoration: none;
+    border: 1px solid lightgray;
+    border-bottom: 1px solid darkgray;
+    border-right: 1px solid darkgray;
+  }
+
+  ul li ul li a:hover {
+    background-color: silver;
+    border: 1px solid darkgray;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+  }
+  main { clear: both; }
